@@ -16,7 +16,7 @@ type DataType = {
 }
 
 export const TableBody = () => {
-    const { filteredData, clearAll } = useFilterContext()
+    const { filteredData } = useFilterContext()
 
     return (<div className="">
         {filteredData.map((data: DataType) => (

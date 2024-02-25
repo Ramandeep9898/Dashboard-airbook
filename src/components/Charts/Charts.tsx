@@ -8,7 +8,7 @@ import { PieChartWriter } from './Graphs/PieChartWriter';
 export const Charts = () => {
     const { data: initialData, isLoading } = useGetData()
 
-    const obj = !isLoading && initialData?.reduce((val, cur) => {
+    const obj = !isLoading && initialData?.reduce((val: any, cur: any) => {
         val[cur.writtenBy] = val[cur.writtenBy] ? val[cur.writtenBy] + 1 : 1;
         return val;
     }, {});
@@ -20,7 +20,7 @@ export const Charts = () => {
     }
 
 
-    const obj2 = !isLoading && initialData?.reduce((val, cur) => {
+    const obj2 = !isLoading && initialData?.reduce((val: any, cur: any) => {
         val[cur.directedBy] = val[cur.directedBy] ? val[cur.directedBy] + 1 : 1;
         return val;
     }, {});

@@ -1,4 +1,4 @@
-import { UseQueryOptions, useQuery } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 
 const useGetData = () => {
     async function getData() {
@@ -10,8 +10,7 @@ const useGetData = () => {
     return useQuery({
         queryKey: ['getData1'],
         queryFn: getData,
-        // staleTime: Infinity,
-        // cacheTime: Infinity
+        staleTime: Infinity,
     });
 };
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { TABLE_CONFIG } from '../../Dashboard.config'
 import { ColumnFilter } from '../ColumnFilter'
 
