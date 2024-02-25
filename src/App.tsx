@@ -16,7 +16,7 @@ const queryClient = new QueryClient({
 });
 import { Route, Routes } from "react-router-dom";
 import { Charts } from './components/Charts/Charts'
-
+import { Home } from './components/Home/Home'
 
 function App() {
 
@@ -29,7 +29,7 @@ function App() {
         <div className="flex flex-row w-full">
           <Sidebar />
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/charts" element={<Charts />} />
           </Routes>
