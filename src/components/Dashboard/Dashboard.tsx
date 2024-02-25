@@ -25,7 +25,7 @@ export const Dashboard = () => {
                     <div className="">
                         <button className="underline" onClick={clearAll}>Clear all Filters</button>
                         <CSVLink data={filteredData}>
-                            <button className="underline ml-3" onClick={() => console.log()}>Download csv</button>
+                            <button className="underline ml-3" >Download csv</button>
                         </CSVLink>
                     </div>
 

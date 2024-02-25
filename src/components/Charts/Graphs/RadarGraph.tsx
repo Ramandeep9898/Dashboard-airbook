@@ -14,7 +14,6 @@ export const RadarGraph = () => {
     for (const key of Object.keys(obj)) {
         dataset.push({ type: key, value: obj[key] })
     }
-    console.log("DATASET", dataset)
 
     return (
         < div className="border border-grey-border rounded-md py-4 px-6">
